@@ -1,0 +1,256 @@
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.game-screen {
+    position: relative;
+    margin: auto;
+    width: 950px;
+    height: 650px;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px solid white;
+}
+
+#cards-section {
+    display: none;
+}
+
+.dealer-cards {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20px;
+}
+
+.dealer-card {
+    width: 110px;
+}
+
+.player-cards {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 280px;
+}
+
+.card-img {
+    height: 170px;
+    margin-left: -50px;
+}
+
+.dealer-count {
+    float: left;
+    color: white;
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.player-count {
+    float: left;
+    color: white;
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+.buttons {
+    position: absolute;
+    top: 250px;
+    left: 310px;
+    display: none;
+    text-align: center;
+}
+.buttons h4 {
+    color: yellowgreen;
+}
+#bet-display {
+    font-size: 25px;
+    display: inline;
+    background-color: honeydew;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: auto;
+}
+#bet-display p {
+    display: inline;
+}
+
+
+#hit {
+    background-color: #399E5A;
+    width: 110px;
+    padding: 12px 28px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    outline: none;
+}
+
+#hit:hover {
+    background-color: #26532B;
+}
+
+#stand {
+    background-color: #e7e7e7;
+    width: 110px;
+    padding: 12px 28px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    outline: none;
+}
+
+#stand:hover {
+    background-color: grey;
+}
+
+.message {
+    position: absolute;
+    width: 350px;
+    top: 250px;
+    display: none;
+    background-color: #0D1321;
+    margin-left: -150px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.message p{
+    color: whitesmoke;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.balance {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.player-name {
+    position: absolute;
+    bottom: 160px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.dealer-name {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+}
+.place-your-bet {
+    position: absolute;
+    margin: auto;
+    width: 500px;
+    top: 180px;
+    left: 200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.bet-value {
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.deal-button {
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    outline: none;
+    border: 5px solid #399E5A;
+}
+
+.deal-button:hover {
+    background-color: grey;
+}
+
+#bet {
+    color: whitesmoke;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+    background-color: #399E5A;
+}
+
+#bet:hover {
+    background-color: #26532B;
+}
+#reset {
+    cursor: pointer;
+    width: 70px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+}
+
+.game-over {
+    position: absolute;
+    margin: auto;
+    top: 200px;
+    left: 350px;
+    display: none;
+    background-color: #0D1321;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.game-over p {
+    color: whitesmoke;
+    font-size: 50px;
+    margin: 10px;
+}
+.game-over button {
+    cursor: pointer;
+    margin: 10px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    border: 1px solid black;
+}
+
+.your-balance {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Blackjack JS</title>
+</head>
+<body>
+    <div class="game-screen">
+        <div id="place-your-bet" class="place-your-bet">
+            <div class="bet-title"><h2>Place Your Bet</h2></div>
+            <div id="bet-value" class="bet-value">$0</div>
+            <div class="bet-buttons">
+                <button id="button-1" class="deal-button" data-value="1">1</button>
+                <button id="button-10" class="deal-button" data-value="10">10</button>
+                <button id="button-50" class="deal-button" data-value="50">50</button>
+                <button id="button-100" class="deal-button" data-value="100">100</button>
+                <button id="reset" class="reset-button">Reset</button>
+                <button id="bet">Deal</button>
+            </div>
+        </div>
+        <div id="game-over" class="game-over">
+            <p>Game Over</p>
+            <button id="restart-game">Restart Game</button>
+        </div>
+        <section id="cards-section">
+        <div id="dealer-cards" class="dealer-cards">
+            <div id="dealer-count" class="dealer-count"></div>
+            <img id="card-back" src="src/img/card-back.png" class="card-img" alt="card-back">
+        </div>
+        <div id="message" class="message"><p></p></div>
+        <div id="buttons" class="buttons">
+            <h4>Your Bet</h4>
+            <button id="hit">Hit</button>
+            <div id="bet-display">
+                <p>$50</p>
+            </div>
+            <button id="stand">Stand</button>
+        </div>
+        <div id="player-cards" class="player-cards">
+            <div id="player-count" class="player-count"></div>
+        </div>
+    </section>
+        <div class="dealer-name">Dealer</div>
+        <div class="player-name">Player</div>
+        <div class="your-balance">Your Balance</div>
+        <div id="balance" class="balance"></div>
+    </div>
+    <script src="src/js/blackjack.js"></script>
+</body>
+</html>
